@@ -1,6 +1,21 @@
+import Login from "./Pages/Login/Login";
+import Dashboard from "./Pages/Dashboard/Dashboard";
+import styles from "./App.module.css";
+import { useState } from "react";
 
-function App(){
-  return <h1>Hello World</h1>
+function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  return (
+    <>
+      {isLoggedIn ? (
+        <Dashboard />
+      ) : (
+        <div className={styles.loginWrapper}>
+          <Login setIsLoggedIn={setIsLoggedIn} />
+        </div>
+      )}
+    </>
+  );
 }
 
 export default App;

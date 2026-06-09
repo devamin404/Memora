@@ -1,0 +1,7 @@
+.loginWrapper {
+  min-height: 100vh;
+  background-color: rgb(195, 195, 198);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,131 @@
+.authContainer {
+  min-height: 60dvh;
+  width: min(90%, 900px);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.authBannerSection {
+  flex-basis: 50%;
+  padding: 1.5rem;
+}
+
+.authBannerSection img {
+  border-radius: 20px;
+}
+
+.authForm {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 4rem;
+}
+
+.memoraLogo {
+  width: 60px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 1.2rem;
+}
+
+label,
+input {
+  display: block;
+}
+
+.authFormHeading {
+  font-size: 2rem;
+}
+
+.welcomeText {
+  color: rgb(113, 112, 112);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.authForm form {
+  margin: 1rem 0;
+}
+
+.authForm form label {
+  font-weight: bold;
+}
+
+.authForm form input {
+  width: 100%;
+  padding: 0.5rem 1.2rem;
+}
+
+.authForm form div {
+  margin: 1.5rem 0;
+}
+
+.signupBtn,
+.loginBtn {
+  width: 100%;
+  color: white;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    #013724,
+    #00442b,
+    #005232,
+    #006039,
+    #006f3f,
+    #017743,
+    #018048,
+    #03884c,
+    #068c50,
+    #089054,
+    #0b9559,
+    #0e995d
+  );
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+
+.loginContainer {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.authForm span {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ################ Media Queries ################## */
+@media (max-width: 900px) {
+  .authContainer {
+    flex-direction: column;
+    width: min(90%, 600px);
+  }
+
+  .authBannerSection {
+    display: none;
+  }
+
+  .memoraLogoContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .authFormHeading {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .authForm {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .welcomeText {
+    font-size: 1.15rem;
+  }
+}
