@@ -14,7 +14,6 @@ function App() {
           <Login setIsLoggedIn={setIsLoggedIn} />
         </div>
       )}
-      <Dashboard />
     </>
   );
 }
