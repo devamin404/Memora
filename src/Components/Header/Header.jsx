@@ -34,7 +34,7 @@ function Header() {
             className={styles.profileImage}
           />
           <span className={styles.profileName}>Muhammad Amin</span>
-          <CaretDown size={16} weight="bold" />
+          <CaretDown size={16} weight="bold" className={styles.dropDownMenu} />
         </div>
       </div>
     </header>

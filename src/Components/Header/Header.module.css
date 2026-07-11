@@ -58,6 +58,8 @@
   padding: 0.4rem;
   cursor: pointer;
   position: relative;
+  user-select: none;
+  cursor: pointer;
 }
 
 .notificationDot {
@@ -75,9 +77,9 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  cursor: pointer;
   padding: 0.6rem;
   border-radius: 35px;
+  user-select: none;
 }
 
 .profileImage {
@@ -92,4 +94,8 @@
   font-size: 1.4rem;
   font-weight: 600;
   color: #334155;
+}
+
+.dropDownMenu {
+  cursor: pointer;
 }
