@@ -1,0 +1,66 @@
+.statsRow {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.statCard {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1.6rem;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  user-select: none;
+}
+
+.statCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+}
+
+.iconWrapper {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3.5rem;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.textWrapper h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1;
+}
+
+.textWrapper p {
+  font-size: 1.3rem;
+  color: #64748b;
+  margin-top: 0.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.viewLink {
+  font-size: 1.1rem;
+  color: #7057ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.viewLink:hover {
+  text-decoration: underline;
+}
