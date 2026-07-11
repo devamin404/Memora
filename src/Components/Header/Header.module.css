@@ -1,0 +1,95 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.greetingSection h1 {
+  font-size: 2.4rem;
+  color: #1e293b;
+  font-weight: 800;
+}
+
+.greetingSection p {
+  color: #6c7b8f;
+  font-size: 1.5rem;
+  font-weight: 530;
+}
+
+.greetingEmoji {
+  font-size: 1.7rem;
+  display: inline-block;
+  margin-left: 0.6rem;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: white;
+  padding: 1rem 1.6rem;
+  border-radius: 35px;
+  border: 1px solid rgba(157, 163, 172, 0.315);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  width: 30rem;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+.iconButton {
+  background-color: white;
+  border: 1px solid rgba(157, 163, 172, 0.315);
+  box-shadow:
+    rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 0.4rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.notificationDot {
+  background-color: #ef4444;
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 35px;
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 0.6rem;
+  border-radius: 35px;
+}
+
+.profileImage {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-position: center top;
+  object-fit: cover;
+}
+
+.profileName {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #334155;
+}
