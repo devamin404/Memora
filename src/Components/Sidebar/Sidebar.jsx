@@ -5,7 +5,7 @@ import {
   TrashIcon,
   BrainIcon,
 } from "@phosphor-icons/react";
-import logo from "../assets/images/Memora Logo.png";
+import logo from "../../assets/images/Memora Logo.png";
 
 const navigationItems = [
   { label: "Dashboard", icon: FolderIcon, active: true },
