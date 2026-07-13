@@ -8,7 +8,7 @@ function Login({ setIsLoggedIn }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (email === "ameenumer724@gmail.com" && password === "amin2525") {
+    if (email === "user@gmail.com" && password === "user") {
       setIsLoggedIn(true);
     }
     setEmail("");

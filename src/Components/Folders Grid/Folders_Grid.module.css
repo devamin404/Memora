@@ -1,0 +1,118 @@
+.foldersSection {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.createBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: #7057ff;
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.createBtn:hover {
+  background-color: #5b43d6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(112, 87, 255, 0.3);
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.folderCard {
+  position: relative;
+  height: 32rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.cardBackground {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center top;
+  transition: transform 0.6s ease;
+}
+
+.folderCard:hover .cardBackground {
+  transform: scale(1.08);
+}
+
+.cardOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.973) 100%
+  );
+}
+
+.topBadge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 1rem;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  display: grid;
+  place-items: center;
+}
+
+.cardContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  color: white;
+}
+
+.cardContent h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.cardMeta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+  color: #f1f5f9;
+  font-weight: 500;
+}
+
+.cardMeta .dot {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.4);
+}
