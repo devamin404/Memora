@@ -1,4 +1,6 @@
 import styles from "./Login.module.css";
+import memoraLogo from "../../assets/images/Memora Logo.png";
+import memoraAuthImg from "../../assets/images/Memora Auth Image.png";
 import { useState } from "react";
 
 function Login({ setIsLoggedIn }) {
@@ -18,13 +20,13 @@ function Login({ setIsLoggedIn }) {
   return (
     <section className={styles.authContainer}>
       <div className={styles.authBannerSection}>
-        <img src="/src/assets/images/Memora Auth Image.png" alt="Auth Banner" />
+        <img src={memoraAuthImg} alt="Auth Banner" />
       </div>
 
       <div className={styles.authForm}>
         <div className={styles.memoraLogoContainer}>
           <img
-            src="/src/assets/images/Memora Logo.png"
+            src={memoraLogo}
             alt="Memora Logo"
             className={styles.memoraLogo}
           />

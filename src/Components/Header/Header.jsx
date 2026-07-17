@@ -1,4 +1,5 @@
 import styles from "./Header.module.css";
+import profileImage from "../../assets/images/Muhammad Amin Portfolio.png";
 import { MagnifyingGlass, Bell, CaretDown } from "@phosphor-icons/react";
 
 function Header() {
@@ -29,7 +30,7 @@ function Header() {
 
         <div className={styles.profileSection}>
           <img
-            src="/src/assets/images/Muhammad Amin Portfolio.png"
+            src={profileImage}
             alt="Muhammad Amin"
             className={styles.profileImage}
           />
